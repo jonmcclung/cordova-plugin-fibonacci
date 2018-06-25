@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-fibonacci",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A very simple plugin that does some Fibonacci stuff",
   "cordova": {
     "id": "com-example-fibonacci",
