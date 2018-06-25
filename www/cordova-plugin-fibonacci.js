@@ -1,14 +1,14 @@
 var exec = require('cordova/exec');
 
-var PLUGIN_NAME = 'FibonacciPlugin';
+var PLUGIN_NAME = 'fibonacci';
 
-var FibonacciPlugin = {
-    echo: function(phrase, cb) {
+var fibonacci = {
+    echo: function (phrase, cb) {
         exec(cb, null, PLUGIN_NAME, 'echo', [phrase]);
     },
-    getDate: function(cb) {
+    getDate: function (cb) {
         exec(cb, null, PLUGIN_NAME, 'getDate', []);
     }
 };
 
-module.exports = FibonacciPlugin;
+module.exports = fibonacci;

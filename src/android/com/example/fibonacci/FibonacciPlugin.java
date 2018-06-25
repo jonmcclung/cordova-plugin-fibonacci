@@ -34,10 +34,10 @@ public class FibonacciPlugin extends CordovaPlugin {
         switch (action) {
         case "echo":
             this.echo(args.getString(0));
-            break;
+            return true;
         case "getDate":
             this.getDate(callbackContext);
-            break;
+            return true;
             default: return false;
         }
     }
