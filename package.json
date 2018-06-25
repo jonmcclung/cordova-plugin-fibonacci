@@ -1,5 +1,5 @@
 {
-  "name": "com-example-fibonacci",
+  "name": "cordova-plugin-fibonacci",
   "version": "0.1.0",
   "description": "A very simple plugin that does some Fibonacci stuff",
   "cordova": {
@@ -24,5 +24,9 @@
     "cordova-ios"
   ],
   "author": "Jon McClung",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonmcclung/cordova-plugin-fibonacci/issues"
+  },
+  "homepage": "https://github.com/jonmcclung/cordova-plugin-fibonacci#readme"
 }
