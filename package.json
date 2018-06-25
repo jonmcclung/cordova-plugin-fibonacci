@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-fibonacci",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A very simple plugin that does some Fibonacci stuff",
   "cordova": {
     "id": "com-example-fibonacci",
@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/jonmcclung/cordova-plugin-fibonacci/issues"
   },
-  "homepage": "https://github.com/jonmcclung/cordova-plugin-fibonacci#readme"
+  "homepage": "https://github.com/jonmcclung/cordova-plugin-fibonacci#readme",
+  "dependencies": {},
+  "devDependencies": {
+  }
 }

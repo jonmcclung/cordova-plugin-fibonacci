@@ -3,12 +3,12 @@ var exec = require('cordova/exec');
 var PLUGIN_NAME = 'FibonacciPlugin';
 
 var fibonacci = {
-    echo: function (phrase, cb) {
+    echo: function (phrase) {
         console.log('echo was successfully called!!!');
-        exec(cb, null, PLUGIN_NAME, 'echo', [phrase]);
+        exec(null, null, PLUGIN_NAME, 'echo', [phrase]);
     },
-    getDate: function (cb) {
-        exec(cb, null, PLUGIN_NAME, 'getDate', []);
+    getDate: function (success, failure) {
+        exec(success, failure, PLUGIN_NAME, 'getDate', []);
     }
 };
 

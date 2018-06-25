@@ -1,2 +1,5 @@
-
+node_modules/*
 src/android/com/example/.DS_Store
+.vscode/*
+ionic-native/*
+.DS_Store
