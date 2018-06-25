@@ -8,6 +8,7 @@ import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 import java.util.Date;
+import android.util.Log;
 
 public class FibonacciPlugin extends CordovaPlugin {
     private static final String TAG = "FibonacciPlugin";
