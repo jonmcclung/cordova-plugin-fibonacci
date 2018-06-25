@@ -1,6 +1,6 @@
 #import <Cordova/CDVPlugin.h>
 
-@interface MyCordovaPlugin : CDVPlugin {
+@interface FibonacciPlugin : CDVPlugin {
 }
 
 - (void)echo:(CDVInvokedUrlCommand *)command;
