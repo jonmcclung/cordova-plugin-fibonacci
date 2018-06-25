@@ -5,11 +5,11 @@
     <name>cordova-plugin-fibonacci</name>
     <description>A very simple plugin that does some Fibonacci stuff</description>
     <keywords>plugin, cordova, fibonacci, example, template</keywords>
-    <js-module name="cordova-plugin-fibonacci" src="www/cordova-plugin-fibonacci.js">
-        <clobbers target="fibonacci" />
-    </js-module>
 
     <platform name="android">
+        <js-module name="fibonacci" src="www/fibonacci">
+            <clobbers target="fibonacci" />
+        </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FibonacciPlugin">
                 <param name="android-package" value="com.example.fibonacci.FibonacciPlugin" />
@@ -20,6 +20,9 @@
         <source-file src="src/android/com/example/fibonacci/FibonacciPlugin.java" target-dir="src/com/example/fibonacci"/>
     </platform>
     <platform name="ios">
+        <js-module name="fibonacci" src="www/fibonacci">
+            <clobbers target="fibonacci" />
+        </js-module>
         <config-file target="config.xml" parent="/*">
             <feature name="FibonacciPlugin">
                 <param name="ios-package" value="FibonacciPlugin" onload="true" />
