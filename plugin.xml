@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-fibonacci" version="0.1.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-fibonacci</name>
+    <description>A very simple plugin that does some Fibonacci stuff</description>
+    <keywords>plugin, cordova, fibonacci, example, template</keywords>
+    <js-module name="cordova-plugin-fibonacci" src="www/cordova-plugin-fibonacci.js">
+        <clobbers target="fibonacci" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FibonacciPlugin">
+                <param name="android-package" value="com.example.FibonacciPlugin" />
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/com/example/fibonacci/FibonacciPlugin.java" target-dir="src/com/example/fibonacci"/>
+    </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="FibonacciPlugin">
+                <param name="ios-package" value="FibonacciPlugin" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/FibonacciPlugin.h" />
+        <source-file src="src/ios/FibonacciPlugin.m" />
+    </platform>
+</plugin>
