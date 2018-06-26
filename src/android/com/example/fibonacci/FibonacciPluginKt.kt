@@ -5,7 +5,7 @@ import org.apache.cordova.*
 import org.json.JSONArray
 import java.util.*
 
-class FibonacciPlugin : CordovaPlugin() {
+class FibonacciPluginKt : CordovaPlugin() {
 
   val TAG: String = "FibonacciPlugin";
 
